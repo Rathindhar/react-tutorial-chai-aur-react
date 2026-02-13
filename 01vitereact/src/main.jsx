@@ -7,11 +7,13 @@ import React from 'react'
 function MyApp(){
   return(
     <div>
-      <h1>Custom App</h1>
+      <h1>Custom App !!</h1>
     </div>
   )
 }
-/*const reactElement = {
+/* This won't work !!!!
+
+const reactElement = {
     type: 'a',
     props:{
         href: 'https://google.com',
@@ -29,9 +31,25 @@ const anotheruser = "chai aur react"
 const reactElement = React.createElement(
   'a',
   {href: 'https://google.com', target: '_blank'},
-  'Click me to Visit Google',<br/>,<h1>hello world</h1>,
+  'Click me to Visit Google',<br/>,
   anotheruser
 )
+
+ /* for h1 tag
+ const reactElement = React.createElement(
+  'h1',
+  {},
+  'Click me to Visit Google',<br/>,
+  anotheruser
+) */
+
+/* for p tag
+  const reactElement = React.createElement(
+  'p',
+  {},
+  'Click me to Visit Google',<br/>,
+  anotheruser
+)  */
 
 createRoot(document.getElementById('root')).render(
   //<StrictMode>
